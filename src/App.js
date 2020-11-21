@@ -32,11 +32,10 @@ class App extends React.Component {
 
           console.log(this.state);
         });
-      } else {
-        //When userAuth in null, create the new document object there
-        this.setState({currentUser: userAuth});
       }
-    })
+      //When userAuth in null, create the new document object there
+      this.setState({currentUser: userAuth});
+    });
   }
 
   componentWillUnmount() {
